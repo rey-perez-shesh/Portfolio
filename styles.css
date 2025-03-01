@@ -1,0 +1,21 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.name{
+    margin-top: 200px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.imageu {
+    margin-top: 200px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+   
+}
+
