@@ -1,19 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000;
+    background-color: #0d0221;
     color: white;
     text-align: center;
+    flex-direction: column; /* Add this to make sure content stacks vertically */
 }
 
-/* Center the content vertically and horizontally */
 #vanta-bg {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Keep background behind the content */
+    z-index: -1;
 }
 
 h1.name {
@@ -40,44 +43,53 @@ p {
     margin-top: 20px;
 }
 
-/* Styling for buttons */
-.pbutton {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* Navbar Styling */
+.navbar {
+    background-color: var(--nav-bg, #1f1f1f);
+    padding: 1rem 2rem;
+    position: fixed;  /* Ensure it stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ensures navbar spans full width */
+    z-index: 999;  /* Keeps the navbar on top of other content */
+    display: flex;
+    justify-content: center;  /* Center the navbar content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.pbutton:hover {
-    transform: scale(1.1);
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;  /* Ensures the navbar is not too wide */
+    width: 100%;  /* Make sure the container fills the available space */
 }
 
-.button1 {
-    background-color: #FF5733;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
     color: white;
+    text-decoration: none;
 }
 
-.button1:hover {
-    background-color: #C44D1A;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
 
-.button2 {
-    background-color: #33C1FF;
+.nav-links a {
     color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.button2:hover {
-    background-color: #1A91C4;
+.nav-links a:hover {
+    color: #00ffcc;
 }
 
-.button3 {
-    background-color: #28A745;
-    color: white;
-}
-
-.button3:hover {
-    background-color: #218838;
+/* Add margin-top to content below the navbar to prevent overlap */
+.main-content {
+    margin-top: 100px;  /* Adjust this value to match the navbar height */
 }
