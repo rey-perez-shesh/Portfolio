@@ -93,3 +93,25 @@ p {
 .main-content {
     margin-top: 100px;  /* Adjust this value to match the navbar height */
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .centered-image {
+    width: 180px;
+    height: auto; /* Maintains aspect ratio */
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  .centered-image {
+    width: 180px;
+    height: 180px; /* Make height equal to width for a perfect circle */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    border-radius: 50%; /* Makes the image circular */
+  }
