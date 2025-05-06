@@ -9,12 +9,13 @@ body {
     background-color: #0d0221;
     color: white;
     text-align: center;
-    flex-direction: column; /* Add this to make sure content stacks vertically */
+
+
 }
 
 
 #vanta-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,7 +31,7 @@ body {
   
   .section-title::after {
     content: '';
-    display: block;
+    display: flex;
     width: 60px;
     height: 2px;
     background-color: white;
@@ -42,25 +43,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    flex-direction: row;
+    gap: 10pxpx;
     overflow-x: auto;   /* Enables scrolling if screen is too small */
-    padding: 0 20px;
+    padding: 2rem 2rem;
   }
   
-  /* Individual card */
-  .card {
-    background-color: #1f1f1f;
-    border-radius: 12px;
-    width: 140px;
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease;
-    flex-shrink: 0; /* Prevent shrinking when overflowing */
-  }
   
   .card:hover {
     transform: scale(1.05);
@@ -68,7 +55,7 @@ body {
   
   /* Image size */
   .tech-icon {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+    width: 30px;
+    height: 30px;
+
   }
