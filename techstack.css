@@ -25,6 +25,7 @@
 }
 
 body {
+<<<<<<< HEAD
   background-color: var(--base-color);
   color: var(--text-color);
   font-family: 'Poppins', sans-serif;
@@ -34,6 +35,35 @@ body {
 
 header {
   padding: 40px 80px;
+=======
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #0d0221;
+    color: white;
+    text-align: center;
+    
+
+
+}
+
+
+#vanta-bg {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background in place during scroll */
+    background-repeat:repeat;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+>>>>>>> e378f0e7cf7bf845df5d61ce6eea181cc3e899cc
 }
 
 .top-bar {
@@ -195,4 +225,38 @@ nav ul li.active a::after {
   #techstack h2 {
     font-size: 2rem;
   }
+<<<<<<< HEAD
 }
+=======
+  
+  .section-title::after {
+    content: '';
+    display: flex;
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    margin: 8px auto 0;
+  }
+  
+  /* Layout for cards */
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10pxpx;
+    overflow-x: auto;   /* Enables scrolling if screen is too small */
+    padding: 2rem 2rem;
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Image size */
+  .tech-icon {
+    width: 30px;
+    height: 30px;
+
+  }
+>>>>>>> e378f0e7cf7bf845df5d61ce6eea181cc3e899cc
