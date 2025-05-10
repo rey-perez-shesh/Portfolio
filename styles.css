@@ -15,6 +15,7 @@ body {
 }
 
 
+
 #vanta-bg {
     position: absolute;
     top: 0;
@@ -29,6 +30,26 @@ body, html {
     margin: 0;
   }
   
+.viewport-row-about {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Center content vertically */
+    min-height: 100vh;
+    padding-top: 120px;      /* Space for navbar */
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+
+
+.name {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0%;
+    text-decoration: none;
+    text-align: start;
+  }
+  
   .text-container {
     display: flex;
     justify-content: center;
@@ -36,6 +57,17 @@ body, html {
     height: 100vh; /* Full viewport height */
     
   }
+
+  /* Container box styling */
+.text-container-about {
+    width: 100%; /* Control container width */
+    padding: 20px 30px;
+    background-color: #202020;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
   
   h1{
     max-width: 600px;
@@ -52,7 +84,7 @@ body, html {
     
     
   }
-.imageu {
+.image {
     max-width: 200px;
     border-radius: 50%;
     margin-top: 20px;
@@ -144,7 +176,7 @@ body, html {
   .card {
     background-color: #202020;
     border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease, box-shaddow 0.3s ease; /* Smooth transition for hover effect */
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0);
     padding: 20px;
     margin: 20px;
@@ -160,8 +192,18 @@ body, html {
   .card-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
    
-  }
+  }.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 50px;
+}
+
   .card-img-top {
     display: flex;
     justify-content: center;

@@ -5,61 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rey Perez</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="techstack.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script type="text/javascript" src="vanta.waves.min.js" defer></script>
 </head>
 <body>
-  <div id="vanta-bg"></div>
+        <div id="vanta-bg"><canvas class="vanta-canvas" width="1728" height="1398" 
+            style="position: absolute; z-index: 0; top: 0px; left: 0px; width: 1152px; height: 932px;"></canvas>
+        </div>
 
-<<<<<<< HEAD
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html#home" class="logo">Rey Perez</a>
-      <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
+      <a href="index.html" class="logo"><img src="Logo.png" alt="Logo"></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="techstack.html">Tech Stack</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </nav>
-  <section class="techstack-section">
-    <h2 class="section-title">Tech Stack</h2>
-    <div class="techstack-container">
-      <img src="html.png" alt="HTML5" class="tech-icon" />
-      <img src="css.png" alt="CSS3" class="tech-icon" />
-      <img src="java.png" alt="JavaScript" class="tech-icon" />
-      <img src="adroid.png" alt="React" class="tech-icon" />
-      <img src="apex.png" alt="Node.js" class="tech-icon" />
-      <img src="cprog.png" alt="Java" class="tech-icon" />
-      <img src="netbeans.png" alt="C#" class="tech-icon" />
-      <img src="vscode.png" alt="Node.js" class="tech-icon" />
-      <!-- Add more icons as needed -->
-    </div>
-  </section>
-=======
-        <div class="nav-container">
-          <a href="index.html#home" class="logo"></a>
-          <ul class="nav-links">
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="techstack.html">Tech Stack</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
 
-        </div>
-    </nav>
-    <h2 class="section-title">Languages</h2>
-    <div class="row">
-      <img src="./image/c.svg" class="tech-icon" alt="C">
-      <img src="./image/java.svg" class="tech-icon" alt="Java">
-      <img src="./image/css.svg" class="tech-icon" alt="CSS">
-      <img src="./image/html.svg" class="tech-icon" alt="HTML">
-      <img src="./image/oracleapex.svg" class="tech-icon" alt="SQL">
-      <img src="./image/androidstudio.svg " class="=tech-icon" alt="Android Studio">
-      <img src="./image/js.svg" class="tech-icon" alt="javascript">
-      <img src="./image/git.png" class="tech-icon" alt="Git">
-      <img src="./image/github.svg" class="tech-icon" alt="GitHub">
-      <img src="./image/vscode.svg" class="tech-icon" alt="VScode">
+<div class="card-container">
+ <div class="card" style="width: 18rem;">
+      <img src="image/androidstudio.svg" class="card-img-top" alt="profile">
+      <div class="card-body">
+        <h5 class="card-title">ANDROID STUDIO</h5>
+      </div>
     </div>
->>>>>>> e378f0e7cf7bf845df5d61ce6eea181cc3e899cc
+
+     <div class="card" style="width: 18rem;">
+      <img src="image/c.svg" class="card-img-top" alt="profile">
+      <div class="card-body">
+        <h5 class="card-title">C++</h5>
+      </div>
+    </div>
+
+<div class="card" style="width: 18rem;">
+      <img src="image/css.svg" class="card-img-top" alt="profile">
+      <div class="card-body">
+        <h5 class="card-title">CSS</h5>
+      </div>
+    </div>
+
+     <div class="card" style="width: 18rem;">
+      <img src="image/git.png" class="card-img-top" alt="profile">
+      <div class="card-body">
+        <h5 class="card-title">GITHUB</h5>
+      </div>
+    </div>
+
+
+<div class="card" style="width: 18rem;">
+      <img src="image/html.svg" class="card-img-top" alt="profile">
+      <div class="card-body">
+        <h5 class="card-title">HTML</h5>
+      </div>
+    </div>
+
+     <div class="card" style="width: 18rem;">
+      <img src="image/java.svg" class="card-img-top" alt="profile">
+      <div class="card-body">
+        <h5 class="card-title">JAVA</h5>
+      </div>
+    </div>
+
+  <div class="card" style="width: 18rem;">
+      <img src="image/js.svg" class="card-img-top" alt="profile">
+      <div class="card-body">
+        <h5 class="card-title">JS</h5>
+      </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+  </body>
+  </html>
+  
+
+
