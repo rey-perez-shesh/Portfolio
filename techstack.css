@@ -9,6 +9,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f5f5;
   color: #ffffff;
+  overflow: hidden;
+  height: 100vh;
 }
 
 #vanta-bg {
@@ -17,6 +19,8 @@ body {
   height: 100%;
   z-index: -1;
 }
+
+
 
 /* Navbar styles */
 .navbar {
@@ -37,6 +41,25 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.viewport-row-tech{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 80px); /* Adjust based on your navbar height */
+  flex-direction: column;
+  padding-top: 100px; /* Adjust based on your navbar height */
+  margin-bottom: 100px; /* Adjust based on your navbar height */
+ 
+}
+
+.text-container-tech{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px; /* Adjust based on your navbar height */
 }
 
 .logo img {
@@ -77,39 +100,61 @@ body {
 
 /* Card container */
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1rem;
+  width: 100%;
+  max-width: 1500px;
   padding: 1rem;
-  margin-top: 50px;
+  box-sizing: border-box;
+  flex: 1;
+  overflow: hidden;
 }
 
-.card {
+.card-tech {
   background-color: #202020;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 200px;
-  transition: transform 0.3s;
+   transition: transform 0.3s ease, box-shaddow 0.3s ease; /* Smooth transition for hover effect */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ width: 100%;
+  max-width: 160px; /* smaller width */
+  height: 160px; /* fixed height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .card-tech {
   transition: transform 0.3s;
 }
 
-.card:hover {
+.card-tech:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgb(247, 247, 247); /* Adds subtle shadow */
 }
 
-.card-img-top {
+.icon-img-top {
   width: 40%;
   height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0); /* Adds subtle shadow */
+    animation: slideUpFade 1s ease-in-out; /* Animation for the image */
 }
+ .icon-img-top:hover {
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 10px 20px rgb(247, 247, 247); /* Adds subtle shadow */
+  }
 
 .card-body {
   padding: 1rem;
   text-align: center;
+}
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .text-about {
@@ -152,7 +197,7 @@ body {
         display: flex;
       }
 
-      .text-container-about {
+      .text-container-tech {
         width: 100%; /* Full width */
         
       }

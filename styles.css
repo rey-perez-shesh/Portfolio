@@ -34,8 +34,6 @@ body, html {
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center;     /* Center content vertically */
-    min-height: 100vh;
-    padding-top: 120px;      /* Space for navbar */
     box-sizing: border-box;
     gap: 30px;
 }
@@ -174,13 +172,14 @@ body, html {
   }
 
   .card {
+    width: 300px;
+    height: 400px;
     background-color: #202020;
     border-radius: 12px;
     transition: transform 0.3s ease, box-shaddow 0.3s ease; /* Smooth transition for hover effect */
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0);
     padding: 20px;
     margin: 20px;
-    max-width: 300px; /* Set a max width for the card */
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
     animation: slideUpFade 1s ease-in-out; /* Animation for the card */
   }
@@ -194,8 +193,16 @@ body, html {
     margin-bottom: 10px;
     font-weight: bold;
     color: #ffffff;
+    padding-bottom: 10px;
    
-  }.card-container {
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: #ffffff;
+    padding-bottom: 10px;
+  }
+  .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -212,8 +219,8 @@ body, html {
     margin-bottom: 1rem;
   }
   .card-img-top {
-    width: 180px;
-    height: 180px; /* Make height equal to width for a perfect circle */
+    width: 160px;
+    height: 160px;
     object-fit: cover; /* Ensures the image fills the circle without distortion */
     border-radius: 50%; /* Makes the image circular */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
